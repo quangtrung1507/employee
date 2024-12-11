@@ -1,0 +1,140 @@
+/* Reset và nền */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  margin: 20px;
+  color: #333;
+}
+
+/* Tiêu đề */
+h1, h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4b0082;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-color: #ff7eb9;
+  box-shadow: 0 0 8px rgba(255, 126, 185, 0.5);
+  outline: none;
+}
+
+form button {
+  background: linear-gradient(to right, #ff7eb9, #ff758c);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  background: #ff4a6e;
+}
+
+/* Bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+thead th {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: center;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hình ảnh */
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Nút thao tác */
+a {
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+a[href*="edit"] {
+  background-color: #ffc107;
+  color: #333;
+}
+
+a[href*="delete"] {
+  background-color: #e03131;
+}
+
+a[href*="delete"]:hover {
+  background-color: #c02929;
+}
